@@ -19,9 +19,9 @@ enable
 configure terminal
 
 vtp version 2
+vtp mode server
 vtp domain semana4
 vtp password 123
-vtp mode server
 ```
 
 ### Crear VLANS
@@ -59,9 +59,20 @@ exit
 enable
 configure terminal
 
-vtp domain semana4
 vtp version 2
 vtp mode client
+vtp domain semana4
+vtp password 123
+```
+
+### Configurar VTP (Transparent)
+```bash
+enable
+configure terminal
+
+vtp version 2
+vtp mode transparent
+vtp domain semana4
 vtp password 123
 ```
 
