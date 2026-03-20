@@ -248,6 +248,7 @@ Switch(config)# ip routing
 
 ### Interfaces routed (no switchport)
 
+El comando `ip routing` permite el uso de show ip route
 El comando `no switchport` convierte el puerto de capa 2 a capa 3, permitiéndole tener IP propia:
 
 ```
