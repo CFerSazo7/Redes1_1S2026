@@ -219,6 +219,11 @@ vlan 10
 vlan 20
  name DOCENTES
 
+interface fa0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20
+
 interface vlan 10
  ip address 192.168.2.1 255.255.255.128
  no shutdown
