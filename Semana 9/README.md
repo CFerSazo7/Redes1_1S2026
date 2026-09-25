@@ -148,6 +148,10 @@ configure terminal
 ip route 192.168.2.0 255.255.255.128 10.0.0.26
 ip route 192.168.2.128 255.255.255.224 10.0.0.26
 
+# Redistribucion de rutas estaticas
+router eigrp 100
+redistribute static
+
 end
 write memory
 ```
